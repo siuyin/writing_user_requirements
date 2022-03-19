@@ -80,7 +80,7 @@ automate the testing of user requirements of software systems.
 
 ## How may we check that we are building the right thing?
 
-Here is were usage scenarios play a part.
+Here is where usage scenarios come in.
 
 Usage scenarios, or just simply scenarios, define:
 
@@ -128,5 +128,12 @@ by human users and amenable to automated testing by computer programs.
 
 ## Presentation source code
 
-The source code to this presentation in `go present` .slide format is available at:  
+The source code to this presentation in `go present` .slide format is available at:
+
 https://github.com/siuyin/writing_user_requirements
+
+---
+
+Xendit is hiring.
+
+email: careers@xendit.co
