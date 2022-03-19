@@ -1,6 +1,6 @@
 # Writing user requirements.
 
-The content in is the .slide file.
+The content source code is in the .slide file.
 
 To present using `go present`:
 ```
