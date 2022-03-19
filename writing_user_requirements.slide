@@ -1,0 +1,113 @@
+# Writing User Requirements
+Building the right thing
+19 Mar 2022
+
+Loh Siu Yin
+Engineering Manager, Xendit
+siuyin@xendit.co
+
+## User Requirements v. System Specifications
+
+- User requirements express a person's **needs**.  
+ Gather requirements to better understand the need for something.  
+ The key question to ask is:
+ "What can I build, or do, to fulfil this need?"
+
+---
+
+- System specifications detail what a thing **is**.   
+ Write specifications to document a system's properties or attributes.  
+ For example: It must be blue in colour and have dimensions X.
+
+## Examples
+
+**Feature: Automating software repository administration**  
+As a software repository administrator, I want to automate its administration  
+so that I may avoid human error  
+and I am relieved of this tedious task.
+
+**Specification: City A suspension bridge**  
+at location X  
+having dimensions Y  
+with load carrying capacity Z.
+
+## Why user requirements?
+- When properly understood, user requirements  
+ inform us **who** we are building for,  
+ **what** needs to be delivered,  
+ and **why** our customer needs it.
+
+- This helps us stay on track and build the right thing.
+
+
+## Cucumber's Gherkin: One way to write user requirements
+Gherkin (https://cucumber.io/docs/gherkin/reference/) is used for Behaviour-Driven Development.
+
+That is just fancy way of saying: "This is a way for building something that will behave according to what you need."
+
+Thus Gherkin is useful way to format user requirements.
+
+## Writing user requirements, step-by-step.
+
+1. Identify who your user or customer is.
+
+1. Ask why your customer needs the desired thing.
+ This provides helpful context.
+
+1. Agree with your customer what needs to be delivered.
+
+1. Write the **feature** title and description.
+
+## Example
+1. My customer is a software repository administrator. The role is titled: "git admin".
+
+1. Customer wants to avoid, or at least minimise, human error.  
+ And also avoid the tedium of manually administering the software repository.
+
+1. Customer agrees that what needs to be delivered is: "software repository administration automation".
+
+---
+
+**Feature: Automating software repository administration**  
+As a software repository administrator, I want to automate its administration  
+so that I may avoid human error  
+and I am relieved of this tedious task.
+
+## How may we check that we are building the right thing?
+
+Here is were usage scenarios play a part.
+
+Usage scenarios, or just simply scenarios, define:
+
+1. Pre-conditions: What needs to be present before some user action is made.
+
+1. Action: Something that a user or customer does when interacting with the system.
+
+1. Results: The desired outcomes resulting from the user's action.
+
+---
+
+A scenario sets up one user-acceptance test.
+
+## A more complete user requirement in Gherkin
+**Feature: Automating software repository administration**  
+As a software repository administrator, I want to automate its administration  
+so that I may avoid human error  
+and I am relieved of this tedious task.
+
+**Scenario: Adding a new member to software development team**  
+**Given** I am a Technology Lead  
+**And** a new member (person) what has just joined my Team  
+**And** that Member has a unique ID  
+**When** I ask System to add Member to my Team  
+**Then** I should see that Member included as part of my Team.
+
+## A second usage scenario
+**Scenario: Creating a software development team entry to be managed by the repository**  
+**Given** I am a Technology Lead  
+**And** I have a new Team identified by a unique Name  
+**And** I have a Description of the Team's purpose  
+**When** I ask System to create the Team entry  
+**Then** I should see the new Team entry in the System  
+**But** I should receive an alert and an option to proceed or cancel instead if a similar team entry already exist in the System
+
