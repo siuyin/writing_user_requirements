@@ -43,9 +43,14 @@ with load carrying capacity Z.
 ## Cucumber's Gherkin: One way to write user requirements
 Gherkin (https://cucumber.io/docs/gherkin/reference/) is used for Behaviour-Driven Development.
 
-That is just fancy way of saying: "This is a way for building something that will behave according to what you need."
+That is just fancy way of saying: "A way for building something that will behave according to what you need."
 
 Thus Gherkin is useful way to format user requirements.
+
+It is English written in a specific way.
+When Gherkin syntax is followed, it reads like structured English
+but can also be used by computer programs to
+automate the testing of user requirements of software systems.
 
 ## Writing user requirements, step-by-step.
 
@@ -69,9 +74,9 @@ Thus Gherkin is useful way to format user requirements.
 ---
 
 **Feature: Automating software repository administration**  
-As a software repository administrator, I want to automate its administration  
-so that I may avoid human error  
-and I am relieved of this tedious task.
+**As a** software repository administrator, **I** want to automate its administration  
+**so that** I may avoid human error  
+**and** I am relieved of this tedious task.
 
 ## How may we check that we are building the right thing?
 
@@ -109,5 +114,19 @@ and I am relieved of this tedious task.
 **And** I have a Description of the Team's purpose  
 **When** I ask System to create the Team entry  
 **Then** I should see the new Team entry in the System  
-**But** I should receive an alert and an option to proceed or cancel instead if a similar team entry already exist in the System
+**But** I should receive an alert and an option to proceed or cancel instead if a similar team entry already exists in the System
 
+## Wrap-up
+A **Feature** expresses a user's needs.  
+A Feature can have one or more scenarios.
+
+**Scenario**s are usage examples and can be used as acceptance tests.
+
+**Gherkin** is structured English that may be used to capture user requirements.  
+It is useful in representing requirements in non-technical language that can be understood
+by human users and amenable to automated testing by computer programs.
+
+## Presentation source code
+
+The source code to this presentation in `go present` .slide format is available at:  
+https://github.com/siuyin/writing_user_requirements
